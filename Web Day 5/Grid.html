@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Grid</title>
+    
+    <style>
+        .Welcome {
+            display: grid;
+            grid-template-columns: 70% 30%;   /*-------its bring everything to inline  and every dive will be follow thid formula--------*/
+            /*
+            grid-column-gap: 5px;       ------Gap between column-----
+            grid-row-gap: 5px;          ------Gap between row------
+            */
+            grid-gap:5px        /*------Same as above two------*/
+        }
+        .Welcome div{
+            background-color: rgb(197, 211, 211);
+            padding: 10px;
+        }
+        .Welcome div:nth-child(odd){
+            background-color: rgb(13, 165, 224);
+        }
+    </style>
+</head>
+<body>
+    <div class="Welcome">
+        <div>
+            I suggest that you reread this list from time to time. Never lose
+            sight of how readers may react. I will be dealing with all these
+            aspects of writing in this book but will just highlight one of
+            them now, as it is one of the most common. It is this: what
+            do you think the lack of the ‘human touch’ in writing could
+            mean? Is it the fact that business writers actively avoid using
+            ‘people’ words such as ‘you’ and ‘we’? Failing to use people
+            words often happened in the past and, unfortunately, it can
+            still be seen today. Let me demonstrate. A company writes to
+            a client on the following lines:
+        </div>
+
+        <div>
+            Why have I included the word ‘current’ in the formula?
+            This is because so often people systematically address the first
+            three points I list, but then forget to update the information.
+            So the best-laid plans can get messed up.
+        </div>
+
+
+        <div>
+            I suggest that you reread this list from time to time. Never lose
+            sight of how readers may react. I will be dealing with all these
+            aspects of writing in this book but will just highlight one of
+            them now, as it is one of the most common. It is this: what
+            do you think the lack of the ‘human touch’ in writing could
+            mean? Is it the fact that business writers actively avoid using
+            ‘people’ words such as ‘you’ and ‘we’? Failing to use people
+            words often happened in the past and, unfortunately, it can
+            still be seen today. Let me demonstrate. A company writes to
+            a client on the following lines:
+        </div>
+
+        <div>
+            Why have I included the word ‘current’ in the formula?
+            This is because so often people systematically address the first
+            three points I list, but then forget to update the information.
+            So the best-laid plans can get messed up.
+        </div>
+    </div>
+</body>
+</html>
